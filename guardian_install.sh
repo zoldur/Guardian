@@ -3,7 +3,7 @@
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='gdc.conf'
 CONFIGFOLDER='/root/.gdc'
-COIN_DAEMON='akulad'
+COIN_DAEMON='gdcd'
 COIN_CLI='gdc-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/guardiancoin/gdc/releases/download/1.0.0.1/gdc-linux.tar.gz'
