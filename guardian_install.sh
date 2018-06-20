@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='gdc.conf'
-CONFIGFOLDER='/root/.gdc'
-COIN_DAEMON='gdcd'
-COIN_CLI='gdc-cli'
+CONFIG_FILE='gdnc.conf'
+CONFIGFOLDER='/root/.gdnc'
+COIN_DAEMON='gdncd'
+COIN_CLI='gdnc-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/guardiancoin/gdc/releases/download/1.0.0.1/gdc-linux.tar.gz'
+COIN_TGZ='https://github.com/guardiancoin/GDNC/releases/download/1.2.0.1/gdnc-linux.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Guardian'
-COIN_PORT=47100
-RPC_PORT=47200
+COIN_PORT=47110
+RPC_PORT=47210
 
 NODEIP=$(curl -s4 api.ipify.org)
 
